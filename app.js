@@ -1,9 +1,9 @@
-var vm = new Vue({
+/*var vm = new Vue({
     el:'#app',
     data:{
         ok:true
     }
-})
+})*/
 var vm1 = new Vue({
     el:'#app',
     data:{
