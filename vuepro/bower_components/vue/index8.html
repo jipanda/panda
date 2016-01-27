@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>my-vue</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div id="app">
+<!--       <div class="static" v-bind:class="{'class-a':isA,'class-b':isB}" >
+  VueJs-Color
+</div> -->
+
+<!-- 绑定一个对象 -->
+<!--       <div class="static" v-bind:class="classObject" > 
+        VueJs-Color
+      </div> -->
+<!-- 绑定一个数组 -->
+      <div class="static" v-bind:class="[classA,classB]" > 
+        VueJs-Color
+      </div>
+
+    </div>
+    <script src="dist/vue.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

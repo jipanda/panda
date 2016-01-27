@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>my-vue</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div id="app">
+        <div>{{{message}}}</div> 
+        <!-- {{{message}}} {{{}}}可以解析出html字符串--> 
+        
+          <a v-bind:href="url">点点看</a>
+          <p v-on:click="tips">也可以点的</p>
+          <p @click="tips">@click缩写也可以的</p>
+    </div>
+    <script src="dist/vue.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>my-vue</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div id="app">
+<!--       <h1 v-if="ok">哈哈哈</h1>
+<h3 v-else>哼哼</h3> -->
+
+    <template v-if="ok">
+      <h1>Title</h1>
+      <p>Paragraph 1</p>
+      <p>Paragraph 2</p>
+    </template>
+
+  <div v-if="Math.random() > 0.5">
+    sorry
+  </div>
+  <div v-else>
+    Not sorry
+  </div>
+  <ul>
+    <template v-for="item in items" track-by="$index" >
+      <li>{{item.msg}}</li>
+      <li class="divider"></li>
+    </template>
+  </ul>
+
+  <ul>
+    <template v-for="val in object" track-by="$index">
+      <li>{{$key}}:{{val}}</li>
+    </template>
+  </ul>
+  <div>
+    <span v-for="n in 10">{{ n }}</span>
+  </div>
+    </div>
+    <script src="dist/vue.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
